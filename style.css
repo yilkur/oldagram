@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 13px;
+}
+
+.wrapper {
+  width: 375px;
+  margin: 0 auto;
+}
+
+header.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.logo {
+  width: 132px;
+  height: auto;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+main {
+  width: 375px;
+  margin: 0 auto;
+  background: #ededed;
+}
+
+
+article {
+  margin-bottom: 2rem;
+}
+
+.post-header {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: white;
+}
+
+.post-header p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.post-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.post-icons img {
+  height: 22px;
+}
+
+.post-comment {
+  margin-bottom: 0;
+}
+
+.icon-heart {
+  transition: transform 0.1s ease;
+}
+
+.icon-heart:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.icon-heart:active {
+  animation: pop 0.2s forwards;
+}
+
+.post-footer {
+  background: white;
+  padding: 1rem;
+}
+
